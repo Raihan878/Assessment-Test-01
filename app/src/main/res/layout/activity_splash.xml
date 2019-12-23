@@ -2,16 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashSceen.SplashActivity">
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context=".ui.SplashSceen.SplashActivity">
 
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:id="@+id/SplashImage"
-        android:src="@drawable/images"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/SplashImage"
+            android:layout_width="170dp"
+            android:layout_height="220dp"
+            android:src="@drawable/images" />
+    </LinearLayout>
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/webHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleY="-1"
+        />
 
 </LinearLayout>
