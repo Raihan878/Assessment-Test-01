@@ -34,7 +34,7 @@ public class FirstSceenActivity extends AppCompatActivity implements View.OnClic
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.myproductlist);
+        setContentView(R.layout.activity_first_sceen);
         name = findViewById(R.id.nameET);
         catagory = findViewById(R.id.catagoryET);
         description = findViewById(R.id.descriptionET);
