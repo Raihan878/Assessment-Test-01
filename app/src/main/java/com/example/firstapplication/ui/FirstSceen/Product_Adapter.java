@@ -71,7 +71,6 @@ public class Product_Adapter extends RecyclerView.Adapter<Product_Adapter.ViewHo
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private ImageView imageView;
         private TextView nametextView;
         private CardView cardViewLayout;
         private TextView idTextView;
@@ -81,7 +80,7 @@ public class Product_Adapter extends RecyclerView.Adapter<Product_Adapter.ViewHo
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.imageView);
+            ImageView imageView = itemView.findViewById(R.id.imageView);
             nametextView = itemView.findViewById(R.id.nameTV);
             cardViewLayout = itemView.findViewById(R.id.cardView);
             idTextView=itemView.findViewById(R.id.idTV);
